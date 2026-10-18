@@ -24,6 +24,7 @@ impl<T> Tensor<T> {
 pub struct Point {
     pub D: u32,   // u32
     pub L: u32,   // u32
+    pub q: Tensor<u64>,   // tensor<L x u64>
 }
 
 #[derive(Debug, Clone, Default)]
@@ -31,7 +32,6 @@ pub struct Inputs {
     pub leaf: Tensor<u64>,   // tensor<L x u64>
     pub siblings: Tensor<u64>,   // tensor<D x L x u64>
     pub index: u64,   // u64
-    pub q: Tensor<u64>,   // tensor<L x u64>
 }
 
 #[derive(Debug, Clone, Default)]

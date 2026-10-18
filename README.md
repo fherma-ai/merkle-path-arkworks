@@ -23,7 +23,6 @@ to answer early.
 - `leaf` — tensor<L x u64>
 - `siblings` — tensor<D x L x u64>
 - `index` — u64
-- `q` — tensor<L x u64>
 - returns `root` — tensor<L x u64>
 
 ## Generated, and not yours
